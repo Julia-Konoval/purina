@@ -1,0 +1,233 @@
+body {
+  background-repeat: no-repeat;
+  width: 70%;
+  margin: auto;
+  font-family: "Fredoka One", cursive;
+}
+h1 {
+  color: white;
+  font-size: 60px;
+  margin-left: 100px;
+  -webkit-text-stroke: 0.1px rgb(139, 105, 105);
+
+  margin-bottom: 5px;
+}
+.container {
+  background-image: url("images/background.png");
+  background-size: 100% 100%;
+  /* width: 50%; */
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#postal-code {
+  width: 100%;
+}
+
+body > header:nth-child(1) > img:nth-child(1) {
+  background-color: grey;
+  padding: 10px;
+  margin: auto;
+}
+
+body > header:nth-child(1) {
+  width: 100%;
+  display: flex;
+}
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+input {
+  border-radius: 3%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #000000;
+  padding: 7px 0;
+  background: white;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 0.8rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #000000, #000000);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 700;
+  /* background-color: white; */
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+.column {
+  padding: 10px;
+  width: 50%;
+}
+
+.container > header:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+#first-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#second-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.row:nth-child(4) > div:nth-child(1) {
+  width: 38%;
+}
+
+div.row:nth-child(4) > div:nth-child(2) {
+  width: 60%;
+}
+
+div.row:nth-child(3) > div:nth-child(1) {
+  width: 39%;
+}
+
+div.row:nth-child(3) > div:nth-child(2) {
+  width: 59%;
+}
+
+#checkboxes {
+  display: flex;
+  flex-direction: column;
+}
+
+div.checkbox-group:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+}
+
+#checkboxes {
+  display: flex;
+  flex-direction: row;
+}
+#checkboxes img {
+  width: 90px;
+}
+
+div.checkbox-group:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox-group {
+  padding: 42px;
+  font-size: 13px;
+}
+.checkbox-group img {
+  width: 90px;
+}
+.dog-food-img img {
+  padding: 2px;
+}
+
+div.checkbox-group:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+}
+ul {
+  list-style: none;
+}
+li {
+  padding: 3px;
+  width: 200px;
+  margin-left: -50px;
+}
+.checkbox-group,
+#additional-text {
+  color: rgb(255, 250, 250);
+  text-shadow: 1px 0px 15px black;
+}
+#additional-text {
+  margin-left: 50px;
+  margin-top: -30px;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+#e-mail {
+  color: rgb(255, 250, 250);
+  text-shadow: 1px 0px 15px black;
+  margin-left: 20px;
+}
+#red-part {
+  display: flex;
+  flex-direction: row;
+  background-color: #c62121;
+  justify-content: center;
+  height: 60px;
+}
+
+#red-part img {
+  height: 160px;
+  margin-top: -50px;
+  width: 20%;
+}
+
+#red-part > p:nth-child(2) {
+  font-size: 20px;
+  color: white;
+  margin-left: 25px;
+}
