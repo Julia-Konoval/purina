@@ -161,15 +161,27 @@
           <p>SMALL & MINI</p>
           <ul class="list">
             <li>
-              <input type="checkbox" id="small" name="small" checked />
+              <input
+                type="checkbox"
+                id="small"
+                name="small"
+                class="small-mini"
+                onclick="smallMiniCheck(this)"
+              />
               <label for="small"
                 >Pro Plan OptiStart Puppy <br />
                 12272132
               </label>
             </li>
             <li>
-              <input type="checkbox" id="mini" name="mini" checked />
-              <label for="mini"
+              <input
+                type="checkbox"
+                id="mini"
+                name="mini"
+                class="small-mini"
+                onclick="smallMiniCheck(this)"
+              />
+              <label for=" mini"
                 >Pro Plan OptiDerma Puppy <br />
                 12272619
               </label>
@@ -185,21 +197,39 @@
           <p>MEDIUM</p>
           <ul class="list">
             <li>
-              <input type="checkbox" id="medium1" name="medium1" checked />
+              <input
+                type="checkbox"
+                id="medium1"
+                name="medium1"
+                class="medium"
+                onclick="mediumCheck(this)"
+              />
               <label for="medium1"
                 >Pro Plan OptiStart Puppy <br />
                 12272214
               </label>
             </li>
             <li>
-              <input type="checkbox" id="medium2" name="medium2" checked />
+              <input
+                type="checkbox"
+                id="medium2"
+                name="medium2"
+                class="medium"
+                onclick="mediumCheck(this)"
+              />
               <label for="medium2"
                 >Pro Plan OptiDerma Puppy <br />
                 12272213
               </label>
             </li>
             <li>
-              <input type="checkbox" id="medium3" name="medium3" checked />
+              <input
+                type="checkbox"
+                id="medium3"
+                name="medium3"
+                class="medium"
+                onclick="mediumCheck(this)"
+              />
               <label for="medium3"
                 >Pro Plan OptiDigest Puppy <br />
                 12278099
@@ -209,7 +239,9 @@
         </div>
 
         <div class="checkbox-group">
-          <img src="images/6.png" alt="large-athletic-package" />
+          <div class="dog-food-img">
+            <img src="images/6.png" alt="large-athletic-package" />
+          </div>
           <p>LARGE ATHLETIC</p>
           <input type="checkbox" id="large1" name="large1" checked />
           <label for="large1"
@@ -218,7 +250,9 @@
           </label>
         </div>
         <div class="checkbox-group">
-          <img src="images/7.png" alt="large-robust-package" />
+          <div class="dog-food-img">
+            <img src="images/7.png" alt="large-robust-package" />
+          </div>
           <p>LARGE ROBUST</p>
           <input type="checkbox" id="large2" name="large2" checked />
           <label for="large2">
@@ -246,6 +280,18 @@
         </div>
       </footer>
     </div>
-    <script src=""></script>
+    <script>
+      function smallMiniCheck(checkbox) {
+        document.querySelectorAll(".small-mini").forEach((item) => {
+          if (item !== checkbox) item.checked = false;
+        });
+      }
+
+      function mediumCheck(checkbox) {
+        document.querySelectorAll(".medium").forEach((item) => {
+          if (item !== checkbox) item.checked = false;
+        });
+      }
+    </script>
   </body>
 </html>

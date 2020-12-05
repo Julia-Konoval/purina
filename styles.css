@@ -2,7 +2,7 @@ body {
   background-repeat: no-repeat;
   width: 70%;
   margin: auto;
-  font-family: "Fredoka One", cursive;
+  font-family: 'Fredoka One', cursive;
 }
 h1 {
   color: white;
@@ -13,7 +13,7 @@ h1 {
   margin-bottom: 5px;
 }
 .container {
-  background-image: url("images/background.png");
+  background-image: url('images/background.png');
   background-size: 100% 100%;
   /* width: 50%; */
 }
@@ -152,6 +152,7 @@ div.row:nth-child(3) > div:nth-child(2) {
 #checkboxes {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 div.checkbox-group:nth-child(1) > div:nth-child(1) {
@@ -173,7 +174,7 @@ div.checkbox-group:nth-child(1) > div:nth-child(1) {
 }
 
 .checkbox-group {
-  padding: 42px;
+  /* padding: 42px; */
   font-size: 13px;
 }
 .checkbox-group img {
@@ -193,7 +194,6 @@ ul {
 li {
   padding: 3px;
   width: 200px;
-  margin-left: -50px;
 }
 .checkbox-group,
 #additional-text {
@@ -230,4 +230,22 @@ li {
   font-size: 20px;
   color: white;
   margin-left: 25px;
+}
+
+@media (max-width: 1280px) {
+  li {
+    width: 100%;
+  }
+
+  #checkboxes img {
+    width: 70px;
+  }
+
+  div.checkbox-group:nth-child(1) > ul:nth-child(3) {
+    padding: 0;
+  }
+
+  div.checkbox-group:nth-child(2) > ul:nth-child(3) {
+    padding: 0;
+  }
 }
