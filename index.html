@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PURINA</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img alt="Purina logo" src="images/proplan.png" />
+      </header>
+      <h1>Beställ valppaker</h1>
+      <form id="form">
+        <div id="first-column" class="column">
+          <div class="form__group field">
+            <input
+              type="input"
+              class="form__field"
+              placeholder="Dagens datum"
+              name="current-date"
+              id="current-date"
+              required
+            />
+            <label for="current-date" class="form__label">Dagens datum</label>
+          </div>
+          <div class="form__group field">
+            <input
+              type="input"
+              class="form__field"
+              placeholder="Namn"
+              name="name"
+              id="name"
+              required
+            />
+            <label for="name" class="form__label">Namn</label>
+          </div>
+          <div class="form__group field">
+            <input
+              type="input"
+              class="form__field"
+              placeholder="Adress"
+              name="address"
+              id="address"
+              required
+            />
+            <label for="address" class="form__label">Adress</label>
+          </div>
+
+          <div class="row">
+            <div class="form__group field">
+              <input
+                type="input"
+                class="form__field"
+                placeholder="Postnr"
+                name="postal-code"
+                id="postal-code"
+                required
+              />
+              <label for="postal-code" class="form__label">Postnr</label>
+            </div>
+            <div class="form__group field">
+              <input
+                type="input"
+                class="form__field"
+                placeholder="Ort"
+                name="city"
+                id="city"
+                required
+              />
+              <label for="city" class="form__label">Ort</label>
+            </div>
+          </div>
+        </div>
+        <div id="second-column" class="column">
+          <div class="form__group field">
+            <input
+              type="input"
+              class="form__field"
+              placeholder="Telefonnr"
+              name="phone-number"
+              id="phone-number"
+              required
+            />
+            <label for="phone-number" class="form__label">Telefonnr</label>
+          </div>
+
+          <div class="form__group field">
+            <input
+              type="input"
+              class="form__field"
+              placeholder="Kennelnamn"
+              name="kennel-name"
+              id="kennel-name"
+              required
+            />
+            <label for="kennel-name" class="form__label">Kennelnamn</label>
+          </div>
+          <div class="row">
+            <div class="form__group field">
+              <input
+                type="input"
+                class="form__field"
+                placeholder="Antal valpar"
+                name="number-of-puppies"
+                id="number-of-puppies"
+                required
+              />
+              <label for="number-of-puppies" class="form__label"
+                >Antal valpar</label
+              >
+            </div>
+
+            <div class="form__group field">
+              <input
+                type="input"
+                class="form__field"
+                placeholder="Födelsedatum"
+                name="date-of-birth"
+                id="date-of-birth"
+                required
+              />
+              <label for="date-of-birth" class="form__label"
+                >Födelsedatum</label
+              >
+            </div>
+          </div>
+          <div class="form__group field">
+            <input
+              type="input"
+              class="form__field"
+              placeholder="Ras"
+              name="breed"
+              id="breed"
+              required
+            />
+            <label for="breed" class="form__label">Ras</label>
+          </div>
+        </div>
+      </form>
+      <div id="checkboxes">
+        <div class="checkbox-group">
+          <div class="dog-food-img">
+            <img src="images/1.png" alt="small-package" />
+            <img src="images/2.png" alt="mini-package" />
+          </div>
+          <p>SMALL & MINI</p>
+          <ul class="list">
+            <li>
+              <input type="checkbox" id="small" name="small" checked />
+              <label for="small"
+                >Pro Plan OptiStart Puppy <br />
+                12272132
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="mini" name="mini" checked />
+              <label for="mini"
+                >Pro Plan OptiDerma Puppy <br />
+                12272619
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="checkbox-group">
+          <div class="dog-food-img">
+            <img src="images/3.png" alt="medium-package" />
+            <img src="images/4.png" alt="medium-package" />
+            <img src="images/5.png" alt="medium-package" />
+          </div>
+          <p>MEDIUM</p>
+          <ul class="list">
+            <li>
+              <input type="checkbox" id="medium1" name="medium1" checked />
+              <label for="medium1"
+                >Pro Plan OptiStart Puppy <br />
+                12272214
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="medium2" name="medium2" checked />
+              <label for="medium2"
+                >Pro Plan OptiDerma Puppy <br />
+                12272213
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="medium3" name="medium3" checked />
+              <label for="medium3"
+                >Pro Plan OptiDigest Puppy <br />
+                12278099
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="checkbox-group">
+          <img src="images/6.png" alt="large-athletic-package" />
+          <p>LARGE ATHLETIC</p>
+          <input type="checkbox" id="large1" name="large1" checked />
+          <label for="large1"
+            >Pro Plan OptiStart Puppy<br />
+            12272432
+          </label>
+        </div>
+        <div class="checkbox-group">
+          <img src="images/7.png" alt="large-robust-package" />
+          <p>LARGE ROBUST</p>
+          <input type="checkbox" id="large2" name="large2" checked />
+          <label for="large2">
+            Pro Plan OptiStart Puppy<br />
+            12272431
+          </label>
+        </div>
+      </div>
+
+      <div id="additional-text">
+        <p>
+          Dina valpsäckar blir levererade till adressen du uppger ovan.
+          <br />
+          Skicka din beställning till: pppbc@vatzoo.se
+          <br />
+          <br />
+          Lycka till med dina valpar och nya valpköpare!
+        </p>
+      </div>
+      <footer>
+        <div id="e-mail">konsumentkontakt@purina.nestle.com</div>
+        <div id="red-part">
+          <img alt="PURINA logo" src="images/purina-logo.png" />
+          <p>Your Pet, Our Passion.</p>
+        </div>
+      </footer>
+    </div>
+    <script src=""></script>
+  </body>
+</html>
